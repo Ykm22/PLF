@@ -24,3 +24,8 @@
         (T (vale_aux l 0))
     )
 )
+
+(print '(t e s t - B))
+(print (vale '(5 4 3 2 3 4 5)))
+(print (vale '(1 2 3 2 3 4 5)))
+(print (vale '(5 4 3 2 1)))
