@@ -13,3 +13,7 @@
 (defun elim(l n)
     (elim_aux l n n)    
 )
+
+(print '(t e s t - A))
+(print (elim '(1 2 3 4 5 6 7 8) 3))
+(print (elim '(1 2 3 4 a b c d) 3))
