@@ -1,7 +1,13 @@
-(defun my_reverse(l col)
+(defun my_reverse(l)
     (cond
-        ((equal l nil) col)
-        ((atom l) (append col (list l)))
-        (t (mapcar #'(lambda(x) (my_reverse x col)) l) )
+        ((atom l) l)
+        (t (mapcar #'my_reverse (reverse_for_list l)))
+    )
+)
+
+(defun reverse_for_list(l)
+    (cond
+        ((equal l nil) nil)
+        (t (append (reverse_for_list (cdr l)) (list (car l))))    
     )
 )
